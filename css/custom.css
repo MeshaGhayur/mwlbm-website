@@ -1,23 +1,12 @@
-@font-face {
-  font-family: 'Playlist Script';
-  src: url("../fonts/playlist-script.eot");
-  src: url("../fonts/playlist-script.eot?#iefix") format("embedded-opentype"), url("../fonts/playlist-script.woff") format("woff"), url("../fonts/playlist-script.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Glacial Indifference';
-  src: url("../fonts/glacial-indifference-regular.eot");
-  src: url("../fonts/glacial-indifference-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glacial-indifference-regular.woff") format("woff"), url("../fonts/glacial-indifference-regular.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Glacial Indifference Bold';
-  src: url("../fonts/glacial-indifference-bold.eot");
-  src: url("../fonts/glacial-indifference-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/glacial-indifference-bold.woff") format("woff"), url("../fonts/glacial-indifference-bold.ttf") format("truetype"); }
+@import url(fonts.css);
 body {
   background-color: #FFFBF5;
   font-size: 17px;
   font-family: "Glacial Indifference", sans-serif;
-  font-weight: normal;
   line-height: 1.5;
   color: #000;
-  overflow: visible; }
+  overflow: visible;
+  font-weight: normal; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
@@ -98,11 +87,11 @@ a.button {
     background-color: #FAE1D7;
     display: -ms-flexbox;
     display: inline-block;
-    transition: margin-left 300ms ease-in-out; }
+    transition: margin-left 400ms ease-in-out; }
   a.button:hover {
     text-decoration: none; }
   a.button:hover::after {
-    margin-left: 24px; }
+    margin-left: 27px; }
 
 main {
   margin: 88px 0; }
@@ -112,7 +101,6 @@ main {
 .overlap-text {
   position: relative; }
   .overlap-text mark {
-    font-size: 1.3em;
     font-family: "Playlist Script", cursive;
     color: #CB4834;
     background: inherit;
@@ -350,6 +338,7 @@ footer {
   .carousel-item {
     max-height: 390px; }
     .carousel-item img {
-      max-width: 100%; } }
+      max-width: 100%;
+      height: auto; } }
 
 /*# sourceMappingURL=custom.css.map */

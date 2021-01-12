@@ -1,4 +1,6 @@
 
+@import "fonts.css";
+
 // Colours
 $red: #CB4834; $pink: #FAE1D7; $black: #000; $beige: #FFFBF5;
 // Fonts
@@ -6,37 +8,15 @@ $script: 'Playlist Script', cursive;
 $sans: 'Glacial Indifference', sans-serif;
 $sans-bold: 'Glacial Indifference Bold', sans-serif;
 
-@font-face {
-  font-family: 'Playlist Script';
-  src: url('../fonts/playlist-script.eot');
-  src: url('../fonts/playlist-script.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/playlist-script.woff') format('woff'),
-       url('../fonts/playlist-script.ttf')  format('truetype'),
-}
-@font-face {
-  font-family: 'Glacial Indifference';
-  src: url('../fonts/glacial-indifference-regular.eot');
-  src: url('../fonts/glacial-indifference-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/glacial-indifference-regular.woff') format('woff'),
-       url('../fonts/glacial-indifference-regular.ttf')  format('truetype'),
-}
-@font-face {
-  font-family: 'Glacial Indifference Bold';
-  src: url('../fonts/glacial-indifference-bold.eot');
-  src: url('../fonts/glacial-indifference-bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/glacial-indifference-bold.woff') format('woff'),
-       url('../fonts/glacial-indifference-bold.ttf')  format('truetype'),
-}
-
 //general
 body{
   background-color: $beige;
   font-size: 17px;
   font-family: $sans;
-  font-weight: normal;
   line-height: 1.5;
   color:$black;
   overflow: visible;
+  font-weight: normal;
 }
 h1, h2, h3, h4, h5, h6{
   line-height: 1.25;
@@ -110,13 +90,13 @@ a.button{
     background-color: $pink;
     display: -ms-flexbox;
     display: inline-block;
-    transition: margin-left 300ms ease-in-out;
+    transition: margin-left 400ms ease-in-out;
   }
   &:hover{
     text-decoration: none;
   }
   &:hover::after{
-    margin-left: 24px;
+    margin-left: 27px;
   }
 }
 main {
@@ -131,7 +111,6 @@ main {
 .overlap-text{
   position: relative;
   mark{
-    font-size: 1.3em;
     font-family: $script;
     color: $red;
     background: inherit;
@@ -407,6 +386,9 @@ footer{
   footer .menu{ border-right: none; }
   .carousel-item {
     max-height: 390px;
-    img{max-width: 100%;}
+    img{
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
