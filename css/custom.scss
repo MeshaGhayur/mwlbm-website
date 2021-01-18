@@ -40,7 +40,10 @@ h2{
   font-size: 40px;
  }
 h3{ font-size: 26px; }
-h4{ font-size: 20px; }
+h4{
+  font-size: 20px;
+  font-weight: bold;
+}
 button:focus{outline: auto;}
 button:focus-visible{outline:5px auto -webkit-focus-ring-color;}
 a:not(.button){
