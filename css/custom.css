@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #FAE1D7;
+  background-color: #FFFBF5;
   font-size: 17px;
   font-family: "Glacial Indifference", sans-serif;
   line-height: 1.5;
@@ -36,7 +36,7 @@ h3 {
   font-size: 26px; }
 
 h4 {
-  font-size: 20px; }
+  font-size: 21px; }
 
 button:focus {
   outline: auto; }
