@@ -187,10 +187,6 @@ header.inner-header {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../images/paint-stroke.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
   height: 170px;
   margin: 0px auto 35px; }
   header.inner-header h1 {
