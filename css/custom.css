@@ -1,6 +1,6 @@
 @import url(fonts.css);
 a:focus {
-  outline-color: #CA4C2B; }
+  outline-color: #CA4A2B; }
 
 html {
   scroll-behavior: smooth; }
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 h1, h2, h4, h5, h6 {
-  color: #CA4C2B; }
+  color: #CA4A2B; }
 
 h1 {
   font-size: 54px; }
@@ -51,7 +51,7 @@ a:not(.button) {
   overflow: hidden;
   transition: color 0.3s cubic-bezier(0.11, 0.7, 0, 1); }
   a:not(.button):hover {
-    color: #CA4C2B;
+    color: #CA4A2B;
     text-decoration: none; }
   a:not(.button)::after {
     position: absolute;
@@ -60,7 +60,7 @@ a:not(.button) {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #CA4C2B;
+    background-color: #CA4A2B;
     content: "";
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -72,7 +72,7 @@ a:not(.button) {
     transform: scale(1); }
 
 a.button {
-  background-color: #CA4C2B;
+  background-color: #CA4A2B;
   color: #FFFBF5;
   padding: 6px 8px 6px 24px !important;
   border-radius: 28px;
@@ -103,11 +103,11 @@ a.button {
 
 mark {
   font-family: "Playlist Script", cursive;
-  color: #CA4C2B;
+  color: #CA4A2B;
   background: inherit;
   font-weight: normal;
   font-size: 1.1em;
-  text-shadow: 2px 1px 1px rgba(202, 76, 43, 0.21); }
+  text-shadow: 2px 1px 1px rgba(202, 74, 43, 0.21); }
 
 img {
   width: 100%;
@@ -177,7 +177,7 @@ nav .navbar-expand-lg .navbar-nav .nav-link, nav .nav-link {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     .nav-primary .navbar-nav a.nav-link:not(.button) {
-      color: #CA4C2B; }
+      color: #CA4A2B; }
   .nav-primary .mob-logo {
     display: none; }
 
@@ -224,7 +224,7 @@ header.hp-header .button {
     display: flex; }
     .cards .outer-container .inner-container {
       background: #FFFBF5;
-      box-shadow: 0 0 12px -8px rgba(202, 76, 43, 0.7);
+      box-shadow: 0 0 12px -8px rgba(202, 74, 43, 0.7);
       padding: 80px 40px;
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
@@ -235,14 +235,14 @@ header.hp-header .button {
       border-bottom: 7px solid #FAE1D7;
       max-width: 100%; }
     .cards .outer-container .card-icon {
-      color: #CA4C2B; }
+      color: #CA4A2B; }
     .cards .outer-container h3 {
       margin: 0; }
     .cards .outer-container p {
       margin: 40px 0; }
     .cards .outer-container a.card-link {
       font-family: "Glacial Indifference Bold", sans-serif;
-      color: #CA4C2B; }
+      color: #CA4A2B; }
       .cards .outer-container a.card-link::after {
         -webkit-transform: scale(1);
         transform: scale(1); }
@@ -262,7 +262,7 @@ header.hp-header .button {
     .cards.testimonials h3 {
       font-size: 0.85em;
       text-transform: capitalize;
-      color: #CA4C2B; }
+      color: #CA4A2B; }
   .cards.products {
     margin-top: 0; }
     .cards.products figure {
@@ -333,7 +333,7 @@ footer {
     display: -ms-inline-flexbox;
     display: inline-flex; }
   footer .menu {
-    border-right: 1px solid #CA4C2B; }
+    border-right: 1px solid #CA4A2B; }
   footer .social-icon {
     padding: 5px; }
     footer .social-icon::after {
