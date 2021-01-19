@@ -24,7 +24,7 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
   line-height: 1.25;
-  margin: 0 0 43px 0;
+  margin: 0 0 33px 0;
   font-family: $sans-bold;
   font-weight: normal;
 }
@@ -76,6 +76,17 @@ a:not(.button){
   &:hover::after{
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+a.inverse{
+  color:$red;
+  &::after{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  &:hover::after{
+    -webkit-transform: scale(0);
+    transform: scale(0);
   }
 }
 a.button{
@@ -277,15 +288,6 @@ header{
     p{ margin: 40px 0;}
     a.card-link{
       font-family: $sans-bold;
-      color:$red;
-      &::after{
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-      &:hover::after{
-        -webkit-transform: scale(0);
-        transform: scale(0);
-      }
     }
     .card-icon{margin: 0 0 20px 0;}
   }
@@ -351,11 +353,46 @@ header{
   margin:140px auto;
   text-align: center;
 }
+#faq{
+  .faq-container{
+    border-bottom: 1px solid #b3b2b1;
+    padding: 35px 0;
+    &.first{padding-top: 0;}
+    &.last{border: none; padding-bottom: 0;}
+  }
+  .question{
+    background-color: #fae1d7;
+    padding: 15px;
+    border-left: 8px solid #ca4a2b;
+    margin: 0;
+    font-family: 'Glacial Indifference';
+    &::before{
+      content: "Q. ";
+      color: #ca4a2b;
+      margin-right: 10px;
+      font-family: 'Glacial Indifference bold';
+      font-weight: bold;
+      font-size: 28px;
+    }
+  }
+  .answer{
+    position: relative;
+    padding: 15px;
+    border-left: 8px solid #fae1d7;
+    margin: 0;
+    &::before{
+      content: "A. ";
+      margin-right: 10px;
+      font-size: 28px;
+      font-family: 'Glacial Indifference bold';
+    }
+  }
+}
 
 //Footer
 footer{
   background-color: $pink;
-  padding: 40px 0;
+  padding: 50px 0;
   h4{ margin: 0 0 15px 0; }
   .copy{
     text-align: right;

@@ -16,7 +16,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
-  margin: 0 0 43px 0;
+  margin: 0 0 33px 0;
   font-family: "Glacial Indifference Bold", sans-serif;
   font-weight: normal; }
 
@@ -71,6 +71,15 @@ a:not(.button) {
   a:not(.button):hover::after {
     -webkit-transform: scale(1);
     transform: scale(1); }
+
+a.inverse {
+  color: #CA4A2B; }
+  a.inverse::after {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  a.inverse:hover::after {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
 
 a.button {
   background-color: #CA4A2B;
@@ -187,6 +196,10 @@ header.inner-header {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+  background-image: url("../images/paint-stroke.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
   height: 170px;
   margin: 0px auto 35px; }
   header.inner-header h1 {
@@ -238,14 +251,7 @@ header.hp-header .button {
     .cards .outer-container p {
       margin: 40px 0; }
     .cards .outer-container a.card-link {
-      font-family: "Glacial Indifference Bold", sans-serif;
-      color: #CA4A2B; }
-      .cards .outer-container a.card-link::after {
-        -webkit-transform: scale(1);
-        transform: scale(1); }
-      .cards .outer-container a.card-link:hover::after {
-        -webkit-transform: scale(0);
-        transform: scale(0); }
+      font-family: "Glacial Indifference Bold", sans-serif; }
     .cards .outer-container .card-icon {
       margin: 0 0 20px 0; }
   .cards.testimonials {
@@ -306,9 +312,41 @@ header.hp-header .button {
   margin: 140px auto;
   text-align: center; }
 
+#faq .faq-container {
+  border-bottom: 1px solid #b3b2b1;
+  padding: 35px 0; }
+  #faq .faq-container.first {
+    padding-top: 0; }
+  #faq .faq-container.last {
+    border: none;
+    padding-bottom: 0; }
+#faq .question {
+  background-color: #fae1d7;
+  padding: 15px;
+  border-left: 8px solid #ca4a2b;
+  margin: 0;
+  font-family: 'Glacial Indifference'; }
+  #faq .question::before {
+    content: "Q. ";
+    color: #ca4a2b;
+    margin-right: 10px;
+    font-family: 'Glacial Indifference bold';
+    font-weight: bold;
+    font-size: 28px; }
+#faq .answer {
+  position: relative;
+  padding: 15px;
+  border-left: 8px solid #fae1d7;
+  margin: 0; }
+  #faq .answer::before {
+    content: "A. ";
+    margin-right: 10px;
+    font-size: 28px;
+    font-family: 'Glacial Indifference bold'; }
+
 footer {
   background-color: #FAE1D7;
-  padding: 40px 0; }
+  padding: 50px 0; }
   footer h4 {
     margin: 0 0 15px 0; }
   footer .copy {
