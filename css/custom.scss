@@ -26,26 +26,18 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.25;
   margin: 0 0 33px 0;
   font-family: $sans-bold;
-  font-weight: normal;
-}
-h1, h2, h4, h5, h6{
-  color: $red;
-}
-h1 {
-  font-size: 54px;
-  &.hp-h1{
-  font-family: $sans;
-  color: $black;
-  }
-}
-h2{
-  font-size: 40px;
- }
-h3{ font-size: 26px; }
-h4{
-  font-size: 20px;
   font-weight: bold;
 }
+h2, h4, h5, h6{color: $red;}
+h1 {
+  font-size: 54px;
+  font-family: $sans;
+  color: $black;
+  font-weight: normal;
+}
+h2{font-size: 40px;}
+h3{font-size: 26px;}
+h4{font-size: 20px;}
 button:focus{outline: auto;}
 button:focus-visible{outline:5px auto -webkit-focus-ring-color;}
 a:not(.button){
@@ -54,11 +46,11 @@ a:not(.button){
   position: relative;
   overflow: hidden;
   transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
-  &:hover{
+  &:hover, &.active{
   color:$red;
   text-decoration: none;
   }
-  &::after{
+  &::after, &.active::after{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -73,7 +65,7 @@ a:not(.button){
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
   }
-  &:hover::after{
+  &:hover::after, &.active::after{
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -124,7 +116,7 @@ a.button{
 }
 mark{
   font-family: $script;
-  color: $red;
+  color: $black;
   background: inherit;
   font-weight: normal;
   font-size: 1.1em;
@@ -217,35 +209,33 @@ nav{
 //header
 
 header{
+  .row{
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .carousel-inner figure{
+    margin-bottom: 0;
+  }
+  p{
+    font-size: 20px;
+    margin-bottom: 43px;
+  }
+  .button{
+    margin-bottom: 43px;
+  }
   &.inner-header{
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    margin: 20px auto 0;
     background-image: url("../images/paint-stroke.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    height: 170px;
-    margin: 0px auto 35px;
-    h1{margin: 0;}
+    background-size: 47%;
+    background-position: right bottom;
+    min-height: 202px;
+    h1{font-size: 40px;}
+    p{font-size: 1em;}
   }
-  &.hp-header{
-    .row{
-      -ms-flex-align: center;
-      align-items: center;
-    }
-    .carousel-inner figure{
-      margin-bottom: 0;
-    }
-    p{
-      font-size: 20px;
-      margin-bottom: 43px;
-    }
-    .button{
-      margin-bottom: 43px;
-    }
-  }
+  mark{color: $red;}
 }
 
 // Products Navbar
@@ -323,6 +313,7 @@ header{
       max-width: 87%;
       h2{
         font-family: $script;
+        font-weight: normal;
         margin-bottom: 6px;
       }
       h3{font-family: $sans;}
@@ -336,10 +327,7 @@ header{
   }
   &.order p{margin-bottom: 0;}
 }
-.order-form{
-  margin-top: 43px;
-  width: 100%;
-}
+.order-form{width: 100%;}
 .full-background{
   background-color: #fae1d7;
   content: '';
@@ -357,22 +345,24 @@ header{
   .faq-container{
     border-bottom: 1px solid #b3b2b1;
     padding: 35px 0;
-    &.first{padding-top: 0;}
+    &.first{padding-top: 15px;}
     &.last{border: none; padding-bottom: 0;}
   }
   .question{
+    font-weight: normal;
     background-color: #fae1d7;
     padding: 15px;
     border-left: 8px solid #ca4a2b;
     margin: 0;
     font-family: 'Glacial Indifference';
+    font-size: 23px;
     &::before{
       content: "Q. ";
       color: #ca4a2b;
       margin-right: 10px;
       font-family: 'Glacial Indifference bold';
       font-weight: bold;
-      font-size: 28px;
+      font-size: 26px;
     }
   }
   .answer{
@@ -383,7 +373,7 @@ header{
     &::before{
       content: "A. ";
       margin-right: 10px;
-      font-size: 28px;
+      font-size: 26px;
       font-family: 'Glacial Indifference bold';
     }
   }
@@ -443,9 +433,6 @@ footer{
     visibility: visible;
     opacity: 1;
   }
-  header.inner-header{
-    height: 120px;
-  }
   nav .nav-item{padding:15px 0;}
   .nav-primary{
     .navbar-nav{
@@ -494,6 +481,11 @@ footer{
       }
     }
   }
+  header.inner-header{
+    background-image: none;
+    margin: 0;
+    min-height: 110px;
+  }
   .nav-secondary{
     padding: 15px;
     .navbar-nav{
@@ -533,9 +525,6 @@ footer{
       text-align: left;
       .link-container{margin: 0;margin-right:auto;}
     }
-  }
-  header.inner-header{
-    height: 90px;
   }
 }
 
