@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Glacial Indifference';
   src: url('../fonts/glacial-indifference-regular.eot');
@@ -8,18 +7,18 @@
   font-display:auto;
 }
 @font-face {
-  font-family: 'Glacial Indifference Bold';
-  src: url('../fonts/glacial-indifference-bold.eot');
-  src: url('../fonts/glacial-indifference-bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/glacial-indifference-bold.woff') format('woff'),
-       url('../fonts/glacial-indifference-bold.ttf')  format('truetype');
-  font-display:auto;
-}
-@font-face {
   font-family: 'Playlist Script';
   src: url('../fonts/playlist-script.eot');
   src: url('../fonts/playlist-script.eot?#iefix') format('embedded-opentype'),
        url('../fonts/playlist-script.woff') format('woff'),
        url('../fonts/playlist-script.ttf')  format('truetype');
+  font-display:auto;
+}
+@font-face {
+  font-family: 'Glacial Indifference Bold';
+  src: url('../fonts/glacial-indifference-bold.eot');
+  src: url('../fonts/glacial-indifference-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/glacial-indifference-bold.woff') format('woff'),
+       url('../fonts/glacial-indifference-bold.ttf')  format('truetype');
   font-display:auto;
 }
