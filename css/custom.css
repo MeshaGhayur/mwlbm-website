@@ -192,7 +192,8 @@ nav .navbar-expand-lg .navbar-nav .nav-link, nav .nav-link {
 
 header .row {
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  min-height: 202px; }
 header .carousel-inner figure {
   margin-bottom: 0; }
 header p {
@@ -201,8 +202,6 @@ header p {
 header .button {
   margin-bottom: 43px; }
 header.inner-header {
-  display: -ms-flexbox;
-  display: flex;
   margin: 20px auto 0;
   background-image: url("../images/paint-stroke.svg");
   background-repeat: no-repeat;
