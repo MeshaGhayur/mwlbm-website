@@ -327,6 +327,13 @@ header{
   }
   &.order p{margin-bottom: 0;}
 }
+.google-review-cta{
+  background-color: #fae1d7;
+  margin: 20px 0 0;
+  padding: 20px;
+  text-align: center;
+  a, a:hover{color: $black;}
+}
 .order-form{width: 100%;}
 .full-background{
   background-color: #fae1d7;

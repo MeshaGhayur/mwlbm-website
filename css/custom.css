@@ -298,6 +298,14 @@ header mark {
   .cards.order p {
     margin-bottom: 0; }
 
+.google-review-cta {
+  background-color: #fae1d7;
+  margin: 20px 0 0;
+  padding: 20px;
+  text-align: center; }
+  .google-review-cta a, .google-review-cta a:hover {
+    color: #000; }
+
 .order-form {
   width: 100%; }
 
