@@ -196,6 +196,8 @@ header .row {
   min-height: 202px; }
 header .carousel-inner figure {
   margin-bottom: 0; }
+  header .carousel-inner figure img {
+    width: auto; }
 header p {
   font-size: 20px;
   margin-bottom: 43px; }
@@ -206,7 +208,7 @@ header.inner-header {
   background-image: url("../images/paint-stroke.svg");
   background-repeat: no-repeat;
   background-size: 47%;
-  background-position: right bottom;
+  background-position: right center;
   min-height: 202px; }
   header.inner-header h1 {
     font-size: 40px; }
@@ -234,7 +236,7 @@ header mark {
     display: flex; }
     .cards .outer-container .inner-container {
       background: #FFFBF5;
-      box-shadow: 0 0 12px -8px rgba(202, 74, 43, 0.7);
+      box-shadow: 0 0 12px -8px #CA4A2B;
       padding: 80px 40px;
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
@@ -447,7 +449,7 @@ footer {
 
   header.inner-header {
     background-image: none;
-    margin: 0;
+    margin: 0 auto;
     min-height: 110px; }
 
   .nav-secondary {

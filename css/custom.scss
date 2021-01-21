@@ -216,6 +216,7 @@ header{
   }
   .carousel-inner figure{
     margin-bottom: 0;
+    img{width: auto;}
   }
   p{
     font-size: 20px;
@@ -229,7 +230,7 @@ header{
     background-image: url("../images/paint-stroke.svg");
     background-repeat: no-repeat;
     background-size: 47%;
-    background-position: right bottom;
+    background-position: right center;
     min-height: 202px;
     h1{font-size: 40px;}
     p{font-size: 1em;}
@@ -261,7 +262,7 @@ header{
     display: flex;
     .inner-container{
     	background: $beige;
-    	box-shadow: 0 0 12px -8px rgba($red,0.70);
+    	box-shadow: 0 0 12px -8px $red;
     	padding: 80px 40px;
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
@@ -482,7 +483,7 @@ footer{
   }
   header.inner-header{
     background-image: none;
-    margin: 0;
+    margin: 0 auto;
     min-height: 110px;
   }
   .nav-secondary{
