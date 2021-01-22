@@ -1,3 +1,32 @@
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");
+  var lazyloadThrottleTimeout;
+
+  function lazyload () {
+    if(lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
+    }
+
+    lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) {
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+    }, 20);
+  }
+
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
 
 function bodyOverflow() {
 if (document.body.style.overflow === "hidden") {
@@ -5,23 +34,6 @@ if (document.body.style.overflow === "hidden") {
 } else {
   document.body.style.overflow = "hidden";
 }
-}
-function toggleClassOpen(){
-  var element = document.getElementById("navbarSupportedContent-primary");
-
-  if (element.classList) {
-    element.classList.toggle("open");
-  } else {
-    // For IE9
-    var classes = element.className.split(" ");
-    var i = classes.indexOf("open");
-
-    if (i >= 0)
-      classes.splice(i, 1);
-    else
-      classes.push("open");
-      element.className = classes.join(" ");
-  }
 }
 function toggleClassOverlay(){
   var element = document.body;
@@ -59,7 +71,6 @@ function toggleClassClose(){
 }
 
 function toggle(){
-  toggleClassOpen();
   toggleClassOverlay();
   toggleClassClose();
   bodyOverflow();
