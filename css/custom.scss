@@ -158,9 +158,11 @@ main {
   }
   }
 }
-.link-container{
-  margin: auto auto 0 0;
-}
+.link-container{ margin: auto auto 0 0;}
+.lazy{
+   background-image: none;
+   background-color: $pink;
+ }
 
 // Slanted Heading Text
 

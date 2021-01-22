@@ -148,6 +148,10 @@ main {
 .link-container {
   margin: auto auto 0 0; }
 
+.lazy {
+  background-image: none;
+  background-color: #FAE1D7; }
+
 .overlap-text {
   position: relative; }
   .overlap-text mark {
