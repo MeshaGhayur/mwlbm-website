@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
       lazyloadThrottleTimeout = setTimeout(function() {
         var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
+        for(var i = 0; i < lazyloadImages.length; i++) {
+            if(lazyloadImages[i].offsetTop < (window.innerHeight + scrollTop)) {
+                lazyloadImages[i].src = lazyloadImages[i].dataset.src;
+                lazyloadImages[i].classList.remove('lazy');
             }
-        });
+        }
         if(lazyloadImages.length == 0) {
           document.removeEventListener("scroll", lazyload);
           window.removeEventListener("resize", lazyload);
@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("resize", lazyload);
     window.addEventListener("orientationChange", lazyload);
   }
-})
+});
+
 
 function bodyOverflow() {
 if (document.body.style.overflow === "hidden") {
