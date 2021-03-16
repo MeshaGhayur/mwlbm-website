@@ -9,7 +9,7 @@
     <meta name="author" content="Made with Love by Minal">
 
     <link rel="icon" type="image/png" href="images/mwlbm-favicon.png" sizes="16x16">
-    <title>Products | Made with Love by Minal</title>
+    <title>Breakable Hearts | Made with Love by Minal</title>
 
     <link rel="preload" as="font" href="fonts/glacial-indifference-regular.woff" type="font/woff" crossorigin="anonymous">
     <link rel="preload" as="font" href="fonts/playlist-script.woff" type="font/woff" crossorigin="anonymous">
@@ -40,7 +40,7 @@
       <div class="navbar-collapse" id="navbarSupportedContent-primary">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="products.html">Products</a>
+            <a class="nav-link" href="products.html">Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html#faq">F.A.Q</a>
@@ -59,142 +59,103 @@
           </ul>
       </div>
     </nav>
-
-    <header class="container inner-header">
-      <div class="row">
-        <section class="col-lg-6">
-          <h1>Products</h1>
+    <main class="single-product container">
+      <article class="row products single">
+        <section class="col-lg-7" aria-hidden="true">
+          <div id="carousel-product" class="carousel slide" >
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-product" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-product" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <figure class="carousel-item  active" data-interval="false">
+                <img src="images/breakable-hearts-2.jpg" height="500" width="690" alt="Breakable Hearts">
+              </figure>
+              <figure class="carousel-item" data-interval="false">
+                <img data-src="images/breakable-hearts-2.jpg" height="500" width="690" class="lazy" alt="Breakable Hearts">
+              </figure>
+            </div>
+          </div>
         </section>
-      </div>
-    </header>
-
-    <nav class="container-fluid navbar navbar-expand-lg nav-secondary" aria-label="List of Products">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-secondary" aria-controls="navbarSupportedContent-secondary" aria-expanded="false" aria-label="Toggle List of Products">
-        Our Products
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-          <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-        </svg>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-secondary">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="berry-towers.html">Berry Towers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="breakable-hearts.html">Breakable Hearts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cakes.html">Cakes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cake-hearts.html">Cake Hearts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cakesicles.html">Cakesicles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cupcakes.html">Cupcakes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hot-chocolate-bombs.html">Hot Chocolate Bombs</a>
-            </li>
-          </ul>
+        <section class="col-lg-5">
+          <div class="inner-container">
+            <h1 class="title">Breakable Hearts</h1>
+            <h2 class="price">starting at $35</h2>
+            <hr>
+            <p> A creative way to show a special person how adored they are. It is a 3D hollow white chocolate edible heart contained with a fun surprise inside.</p>
+            <dl class="single-product-pricing">
+              <dt>Empty breakable heart</dt>
+              <dd>$35</dd>
+              <dt>Filled breakable heart</dt>
+              <dd>$40</dd>
+              <dt>Filled breakable heart with strawberries</dt>
+              <dd>$50</dd>
+            </dl>
+            <section class="steps-to-consider-list">
+              <h3>Steps to consider</h3>
+              <ol>
+                <li>Select your quantity</li>
+                <li>Flavour of hot chocolate</li>
+                <li>Select your chocolate base</li>
+                <li>Select drizzle</li>
+                <li>Select topping</li>
+              </ol>
+            </section>
+            <p class="add-info-note">See below for additional information</p>
+            <div class="link-container"> <a href="order.html" class="button">Order a breakable heart</a></div>
+          </div>
+        </section>
+      </article>
+      <article>
+        <h2>Additional information</h2>
+        <div class="full-background"></div>
+        <div class="add-info cards">
+          <div class="outer-container">
+            <div class="inner-container">
+              <section class="list-container">
+                <h3>Empty breakable heart</h3>
+                <ul class="add-info-list">
+                  <li class="add-info-list-item">Choice of chocolate colour</li>
+                  <li class="add-info-list-item">Includes drizzle and pearls</li>
+                  <li class="add-info-list-item">Includes mallet</li>
+                  <li class="add-info-list-item">Lettering options</li>
+                </ul>
+              </section>
+              <section class="list-container">
+                <h3>Filled breakable heart</h3>
+                <ul class="add-info-list">
+                  <li class="add-info-list-item">Choice of chocolate colour</li>
+                  <li class="add-info-list-item">Includes drizzle and pearls</li>
+                  <li class="add-info-list-item">Filled with assorted chocolate</li>
+                  <li class="add-info-list-item">Includes mallet</li>
+                  <li class="add-info-list-item">Lettering options</li>
+                </ul>
+              </section>
+              <section class="list-container">
+                <h3>Filled breakable heart with strawberries</h3>
+                <ul class="add-info-list">
+                  <li class="add-info-list-item">Choice of chocolate colour</li>
+                  <li class="add-info-list-item">Includes drizzle and pearls</li>
+                  <li class="add-info-list-item">Filled with assorted chocolate</li>
+                  <li class="add-info-list-item">Includes mallet</li>
+                  <li class="add-info-list-item">Lettering options</li>
+                  <li class="add-info-list-item">6 chocolate covered strawberries</li>
+                </ul>
+              </section>
+              <section class="list-container">
+                <h3>Customizations</h3>
+                <ul class="add-info-list">
+                  <li class="add-info-list-item">Customize your chocolate covered strawberries</li>
+                  <li class="add-info-list-item">Fill heart with Lindt chocolate - an additional $5</li>
+                </ul>
+              </section>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <main class="container">
-      <div class="row">
-        <article class="products thumbnails col-md-6 col-lg-4">
-          <figure aria-hidden="true">
-            <a href="berry-towers.html" class="image">
-              <img src="images/berry-towers-thumbnail.jpg" alt="Berry Towers" width="400" height="400">
-            </a>
-          </figure>
-          <section class="inner-container">
-            <h2 class="title"><a href="berry-towers.html">Berry Towers</a></h2>
-            <h3 class="price">$75.00+</h3>
-          </section>
-        </article>
-        <article class="products thumbnails col-md-6 col-lg-4">
-          <figure aria-hidden="true">
-            <a href="breakable-hearts.html" class="image">
-              <img src="images/breakable-hearts-thumbnail.jpg" alt="Breakable Hearts" width="400" height="400">
-            </a>
-          </figure>
-          <section class="inner-container">
-            <h2 class="title"><a href="breakable-hearts.html">Breakable Hearts</a></h2>
-            <h3 class="price">$35.00+</h3>
-          </section>
-        </article>
-        <article class="products thumbnails col-md-6 col-lg-4">
-          <figure aria-hidden="true">
-            <a href="cakes.html" class="image">
-              <img src="images/cake-thumbnail.jpg" alt="Cakes" width="400" height="400">
-            </a>
-          </figure>
-          <section class="inner-container">
-            <h2 class="title"><a href="cakes.html">Cakes</a></h2>
-            <h3 class="price">Get a quote</h3>
-          </section>
-        </article>
-        <article class="products thumbnails col-md-6 col-lg-4">
-          <figure aria-hidden="true">
-            <a href="cake-hearts.html" class="image">
-              <img src="images/cake-hearts-thumbnail.jpg" alt="Cake Hearts" width="400" height="400">
-            </a>
-          </figure>
-          <section class="inner-container">
-            <h2 class="title"><a href="cake-hearts.html">Cake Hearts</a></h2>
-            <h3 class="price">$5.00</h3>
-          </section>
-        </article>
-        <article class="products thumbnails col-md-6 col-lg-4">
-          <figure aria-hidden="true">
-            <a href="cakesicles.html" class="image">
-              <img src="images/cakesicles-thumbnail.jpg" alt="Cakesicles" width="400" height="400">
-            </a>
-          </figure>
-          <section class="inner-container">
-            <h2 class="title"><a href="cakesicles.html">Cakesicles</a></h2>
-            <h3 class="price">$5.00</h3>
-          </section>
-        </article>
-        <article class="products thumbnails col-md-6 col-lg-4">
-          <figure aria-hidden="true">
-            <a href="strawberries.html" class="image">
-              <img src="images/strawberries-thumbnail.jpg" alt="Chocolate Covered Strawberries" width="400" height="400">
-            </a>
-          </figure>
-          <section class="inner-container">
-            <h2 class="title"><a href="strawberries.html">Chocolate Covered Strawberries</a></h2>
-            <h3 class="price">Get a quote</h3>
-          </section>
-        </article>
-        <article class="products thumbnails col-md-6 col-lg-4">
-          <figure aria-hidden="true">
-            <a href="cupcakes.html" class="image">
-              <img src="images/cupcakes-thumbnail.jpg" alt="Cupcakes" width="400" height="400">
-            </a>
-          </figure>
-          <section class="inner-container">
-            <h2 class="title"><a href="cupcakes.html">Cupcakes</a></h2>
-            <h3 class="price">$3.00</h3>
-          </section>
-        </article>
-        <article class="products thumbnails col-md-6 col-lg-4">
-          <figure aria-hidden="true">
-            <a href="hot-chocolate-bombs.html" class="image">
-              <img src="images/hcb-thumbnail.jpg" alt="Hot Chocolate Bombs" width="400" height="400">
-            </a>
-          </figure>
-          <section class="inner-container">
-            <h2 class="title"><a href="hot-chocolate-bombs.html">Hot Chocolate Bombs</a></h2>
-            <h3 class="price">$4.50+</h3>
-          </section>
-        </article>
-      </div>
+      </article>
+      <article class="container cta-banner browse-link">
+          <a href="products.html" class="button">Browse more products</a>
+      </article>
     </main>
 
     <footer class="container-fluid">
