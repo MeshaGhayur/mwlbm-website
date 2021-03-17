@@ -358,11 +358,62 @@ header mark {
       .products.single .inner-container dl.single-product-pricing dt {
         padding-right: 15px;
         font-weight: 600; }
-    .products.single .inner-container .steps-to-consider-list h3 {
-      margin-bottom: 1rem;
-      color: #CA4A2B;
-      font-family: "Glacial Indifference Bold", sans-serif;
-      font-size: 1rem; }
+        .products.single .inner-container dl.single-product-pricing dt .subtext {
+          font-family: "Glacial Indifference", sans-serif;
+          margin: 10px 0 0 10px;
+          font-weight: normal; }
+    .products.single .inner-container .description-list {
+      margin: 43px 0; }
+      .products.single .inner-container .description-list h3 {
+        margin-bottom: 1rem;
+        color: #CA4A2B;
+        font-family: "Glacial Indifference Bold", sans-serif;
+        font-size: 1rem; }
+
+.crt-grid-post .crt-post-hover .crt-post-text {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.crt-post-hover {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+  .crt-post-hover > div {
+    margin: auto;
+    width: 85%; }
+
+.curator-feed-default-feed-layout {
+  font-family: "Glacial Indifference", sans-serif; }
+
+.crt-post-header .crt-social-icon {
+  display: none; }
+  .crt-post-header .crt-social-icon .crt-icon-instagram::before {
+    display: none; }
+
+.crt-popup a::after, .crt-popup-header .crt-social-icon, .crt-post-footer {
+  display: none !important; }
+
+.crt-popup-wrapper .crt-popup .crt-popup-header .crt-post-name {
+  left: 60px !important; }
+
+.crt-grid-post .crt-post-text {
+  font-size: 14px !important; }
+
+.crt-popup-wrapper .crt-popup .crt-popup-right {
+  font-size: 16px !important; }
+
+.crt-popup-left {
+  width: auto !important; }
+
+.crt-popup-container div, .crt-popup-container p {
+  font-family: "Glacial Indifference", sans-serif; }
+
+.note-asterisk::before {
+  content: "*";
+  color: #CA4A2B;
+  font-family: "Glacial Indifference Bold", sans-serif;
+  font-size: 1.1em; }
 
 .google-review-cta {
   background-color: #fae1d7;
@@ -577,7 +628,12 @@ footer {
       height: auto; }
 
   .cards.add-info .outer-container .inner-container {
-    padding: 80px 30px; } }
+    padding: 80px 30px; }
+
+  .products.single .inner-container .title {
+    font-size: 33px; }
+  .products.single .inner-container .price {
+    font-size: 22px; } }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0;

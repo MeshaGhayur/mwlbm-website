@@ -400,18 +400,62 @@ header{
       dt{
         padding-right: 15px;
         font-weight: 600;
+        .subtext{
+          font-family: $sans;
+          margin: 10px 0 0 10px;
+          font-weight: normal;
+        }
       }
     }
-    .steps-to-consider-list h3{
-      margin-bottom: 1rem;
-      color: $red;
-      font-family: $sans-bold;
-      font-size: 1rem;
+    .description-list{
+      margin: 43px 0;
+      h3{
+       margin-bottom: 1rem;
+       color: $red;
+       font-family: $sans-bold;
+       font-size: 1rem;
+      }
     }
   }
 }
 
+//Instagram feed
+.crt-grid-post .crt-post-hover .crt-post-text {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.crt-post-hover{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  > div{
+    margin: auto;
+    width: 85%;
+  }
+}
+.curator-feed-default-feed-layout{
+  font-family: $sans;
+}
+.crt-post-header .crt-social-icon{
+  display: none;
+  .crt-icon-instagram::before{display: none;}
+}
+.crt-popup a::after, .crt-popup-header .crt-social-icon, .crt-post-footer {display: none !important;}
+.crt-popup-wrapper .crt-popup .crt-popup-header .crt-post-name {left: 60px !important;}
+.crt-grid-post .crt-post-text{font-size: 14px !important;}
+.crt-popup-wrapper .crt-popup .crt-popup-right {font-size: 16px !important;}
+.crt-popup-left{width: auto !important;}
+.crt-popup-container div, .crt-popup-container p{font-family: $sans;}
+
 // Other Styled Sections
+
+.note-asterisk::before{
+  content: "*";
+  color: $red;
+  font-family: $sans-bold;
+  font-size: 1.1em;
+}
 
 .google-review-cta{
   background-color: #fae1d7;
@@ -644,6 +688,10 @@ footer{
     }
   }
   .cards.add-info .outer-container .inner-container {padding: 80px 30px;}
+  .products.single .inner-container{
+    .title{font-size:33px;}
+    .price{font-size: 22px;}
+  }
 }
 
 //Bootstrap Override
