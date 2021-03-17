@@ -98,3 +98,17 @@ function toggle(){
   toggleClassClose();
   bodyOverflow();
 }
+
+/* curator-feed-default-feed-layout */
+(function(){
+var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+i.src = "https://cdn.curator.io/published/47678fa4-f8d1-4575-88b8-4333745c7716.js";
+e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+
+$(document).ready(function() {
+  var feed = document.getElementById("insta-feed");
+    if (navigator.userAgent.match(/msie|trident/i)) {
+      feed.style.display = "none";
+    }
+  });
